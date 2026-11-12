@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101d22" />
+    <meta name="description" content="Deutschlingo - học tiếng Đức từng chút một, từ A1 đến B2." />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Deutschlingo — Mỗi ngày một chút tiếng Đức" />
+    <meta property="og:description" content="Học tiếng Đức từ A1 đến B2 qua bài học ngắn, từ vựng và luyện tập tương tác." />
+    <title>Deutschlingo — Mỗi ngày một chút tiếng Đức</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <a class="brand" href="#" aria-label="Deutschlingo, trang chủ">
+          <span class="brand-mark">de</span>
+          <span class="brand-name">deutsch<span>lingo</span></span>
+        </a>
+        <div class="sidebar-caption">KHÔNG GIAN HỌC TẬP</div>
+        <nav class="main-nav" aria-label="Điều hướng chính">
+          <button class="nav-link active" data-page="home" aria-current="page"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z"/></svg></span><span>Tổng quan</span></button>
+          <button class="nav-link" data-page="path"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 8h6m-6 4h6m-6 4h3"/></svg></span><span>Lộ trình học</span><span class="nav-count">12</span></button>
+          <button class="nav-link" data-page="grammar"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8M12 4v16m-5-4 5-7 5 7"/></svg></span><span>Ngữ pháp nhanh</span></button>
+          <button class="nav-link" data-page="vocabulary"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22.5z"/><path d="M4 5.5v17M8 7h8m-8 4h8"/></svg></span><span>Từ vựng & ôn tập</span></button>
+          <button class="nav-link" data-page="speaking"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0m-7 7v3m-4 0h8"/></svg></span><span>Luyện phát âm</span></button>
+          <button class="nav-link" data-page="achievements"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.2 1 5.9-5.2-2.8-5.2 2.8 1-5.9-4.3-4.2 5.9-.9z"/></svg></span><span>Thành tích</span></button>
+          <button class="nav-link" data-page="profile"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></span><span>Hồ sơ</span></button>
+          <button class="nav-link" data-page="settings"><span class="nav-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/><path d="m19.4 15 .1.1 1.1.9-1.6 2.8-1.4-.5a7.8 7.8 0 0 1-1.6.9l-.2 1.5h-3.2l-.2-1.5a7.8 7.8 0 0 1-1.6-.9l-1.4.5-1.6-2.8 1.1-.9a7.1 7.1 0 0 1 0-1.8l-1.1-.9 1.6-2.8 1.4.5a7.8 7.8 0 0 1 1.6-.9l.2-1.5h3.2l.2 1.5a7.8 7.8 0 0 1 1.6.9l1.4-.5 1.6 2.8-1.1.9a7.1 7.1 0 0 1 0 1.8Z"/></svg></span><span>Cài đặt</span></button>
+        </nav>
+        <div class="sidebar-levels">
+          <div class="sidebar-caption">CẤP ĐỘ CỦA BẠN</div>
+          <button class="level-shortcut" data-level="A1"><i class="level-dot dot-a1"></i>A1 · Người mới</button>
+          <button class="level-shortcut" data-level="A2"><i class="level-dot dot-a2"></i>A2 · Cơ bản</button>
+          <button class="level-shortcut" data-level="B1"><i class="level-dot dot-b1"></i>B1 · Trung cấp</button>
+          <button class="level-shortcut" data-level="B2"><i class="level-dot dot-b2"></i>B2 · Độc lập</button>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="sidebar-quote"><span class="quote-spark">✦</span><p>Một chút mỗi ngày — bạn đang tiến gần hơn đến mục tiêu.</p><span>— BẠN CỦA TƯƠNG LAI</span></div>
+          <button class="profile-button" data-page="profile" aria-label="Mở hồ sơ"><span class="avatar"></span><span class="profile-copy"><strong>Người học mới</strong><small>Khởi đầu hành trình</small></span><span class="profile-more">···</span></button>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <button class="mobile-menu" id="menu-toggle" aria-label="Mở menu" aria-controls="sidebar" aria-expanded="false">☰</button>
+          <div class="breadcrumb"><span>Không gian học tập</span><b>/</b><strong id="breadcrumb-current">Tổng quan</strong></div>
+          <div class="topbar-right">
+            <div class="streak-pill" title="Số ngày học liên tiếp"><span class="streak-flame" aria-hidden="true"><svg viewBox="0 0 32 32"><path class="flame-outer" d="M17.4 2.8c1.2 6.4-3.1 7.5-2.4 12.1-2.2-1.2-3.2-3.2-3-5.7C7.2 13.1 5 17 5 21a11 11 0 0 0 22 0c0-6.1-4.1-12-9.6-18.2Z"/><path class="flame-inner" d="M16.5 16.4c.5 3.1-2.4 4.2-2.1 6.6.1 1.4 1.2 2.5 2.7 2.5a3 3 0 0 0 3-3.1c0-2.1-1.6-4.2-3.6-6Z"/></svg></span><strong id="streak-count">0</strong><small>ngày</small></div>
+            <div class="xp-pill"><span class="xp-star">✦</span><strong id="xp-count">0</strong><small>XP</small></div>
+            <button class="top-avatar" data-page="profile" aria-label="Mở hồ sơ"></button>
+          </div>
+        </header>
+
+        <div class="page-content" id="page-content"></div>
+        <footer class="footer"><span>Deutschlingo <span class="footer-dot">·</span> Học một chút, giỏi một chút.</span><span>Được thiết kế với ♥ cho hành trình tiếng Đức của bạn</span></footer>
+      </main>
+      <aside class="right-rail" id="right-rail" aria-label="Tiến độ và nhiệm vụ"></aside>
+    </div>
+    <button class="sidebar-backdrop" data-action="close-menu" aria-label="Đóng menu" tabindex="-1"></button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="modal-root" id="modal-root"></div>
+    <audio id="correct-answer-sound" src="./duolingo-correct.mp3" preload="auto"></audio>
+  </body>
+</html>
